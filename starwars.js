@@ -8,9 +8,9 @@ const filmSearchValue = prompt("Enter the name of a star wars film >> ");
 async function showStarWars(filmname) {
     let response = await axios.get(`${baseURL}${filmname}`);
     let film = await response.data.results;
-    repeat('-', 40);
+    repeat('*', 40);
     selection.forEach(topic => console.log(`| ${topic}: ${film[0][topic.toLowerCase()]}`));
-    repeat('-', 40);
+    repeat('*', 40);
 
     const keys = prepareKey(film[0]);
     keys.forEach(key => print(film[0][key], key));

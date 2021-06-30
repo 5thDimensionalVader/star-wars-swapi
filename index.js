@@ -29,10 +29,12 @@ axios.get(baseURL+`${filmSearchValue}`)
     Director: ${film.director}\n
     Producer: ${film.producer}\n
     Release Date: ${film.release_date}\n
-    Characters: ${film.characters.map(url=>fetchHelper(url)).join(' ')}\n
-    Planets: ${film.planets.map(url=>fetchHelper(url)).join(' ')}\n
-    Species: ${film.species.map(url=>fetchHelper(url)).join(' ')}\n
-    Starships: ${film.starships.map(url=>fetchHelper(url)).join(' ')}\n`);
+    Created : ${film.created}\n
+    Edited : ${film.edited}\n
+    Characters: ${film.characters.map((url) => fetchHelper(url)).join(" ")}\n
+    Planets: ${film.planets.map((url) => fetchHelper(url)).join(" ")}\n
+    Species: ${film.species.map((url) => fetchHelper(url)).join(" ")}\n
+    Starships: ${film.starships.map((url) => fetchHelper(url)).join(" ")}\n`);
     console.log(`\nFinished Loading ...\n\n`);
   })
 })
