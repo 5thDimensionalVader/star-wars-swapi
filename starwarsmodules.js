@@ -1,7 +1,7 @@
 // This code is by no means the best solution, but will help you explore some of
 // the topics in javascript
 import axios from "axios";
-const selection = ["Title", "Director", "Producer", "Release_date"];
+const selection = ["Title", "Director", "Producer", "Release_date", "Created", "Edited"];
 const baseURL = `https://swapi.dev/api/films/?search=`;
 
 async function print(urls, category) {

@@ -13,6 +13,7 @@ async function showStarWars(filmname) {
     repeat('*', 40);
 
     const keys = prepareKey(film[0]);
+    
     keys.forEach(key => print(film[0][key], key));
 }
 
