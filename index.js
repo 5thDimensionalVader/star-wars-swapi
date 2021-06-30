@@ -14,7 +14,6 @@ const fetchHelper = (url) => {
   axios.get(url)
   .then((res) => {console.log(`\t${res.data.name}\n`)})
   .catch(error => {console.log(error.message)});
-
 };
 
 // prompt the user for the film value
@@ -40,3 +39,4 @@ axios.get(baseURL+`${filmSearchValue}`)
 .catch(error => {
   console.log(error.message);
 })
+// console.log("Testing to see...");
